@@ -23,6 +23,7 @@ Today, data is scattered everywhere in the world. Especially in social media, th
 WORKFLOW
 
 STEP 1: 
+
 Installing Libraries and Modules
 ```
 	pip install snscrape 
@@ -31,6 +32,7 @@ Installing Libraries and Modules
 ```
 
 STEP 2: 
+
 Installing Libraries and Modules
 ```
 	import snscrape.modules.twitter as sntwitter
@@ -42,6 +44,7 @@ Installing Libraries and Modules
 ```
 
 STEP 3: 
+
 Required Variables
 ```
 	client = pymongo.MongoClient("mongodb://localhost:27017/")  # To connect to MONGODB
@@ -51,6 +54,7 @@ Required Variables
 ```
 
 STEP 4: 
+
 Navigation is used to create pages
 ```
 	nav = st.sidebar.radio('Navigation',["Home", "Twitter Scraping"])   #TO CREATE SIDEEBAR
@@ -82,6 +86,7 @@ Number of tweets needs to be scrapped.
 
 
 STEP 6:
+
 Scraping data using TwitterSearchScraper and TwitterHashtagScraper and a dataframe is created to store the entire scraped data. 
 ```
 # SCRAPE DATA USING TwitterSearchScraper
@@ -120,13 +125,16 @@ if word:
 ```
 
 STEP 7:
+
 Now we can download this scraped data in the form of CSV or JSON format.
 
 STEP 8:
+
 The database connection is established using pymongo.
 A new collection will be created and data is uploaded into that collection if the user wish to upload.
 
 STEP 9:
+
 Using snscrape and pandas,Tweets get scraped,converted into Dataframe and displayed in tabular format
 
 STEP 10:
