@@ -53,30 +53,8 @@ Required Variables
 	dfm = pd.DataFrame()
 ```
 
+
 STEP 4: 
-
-Navigation is used to create pages
-```
-	nav = st.sidebar.radio('Navigation',["Home", "Twitter Scraping"])   #TO CREATE SIDEEBAR
-if nav == "Home":                              #1ST PAGE
-    st.title(':blue[TWITTER_SCRAPING]:sunglasses:')
-    st.image('https://images.pexels.com/photos/13240228/pexels-photo-13240228.jpeg?auto=compress&cs=tinysrgb&w=600',width=800,output_format="auto")
-    
-if nav == "Twitter Scraping":                  #2ND PAGE
-    option = st.radio('How would you like to search the data in Twitter?',('Keyword', 'Hashtag'))
-    
-    word = st.text_input('Please enter a '+option, 'Example: Data Science')
-    
-    start = st.date_input("Select the start date", datetime.date(2020, 1, 1))
-    
-    end = st.date_input("Select the end date", datetime.date(2023, 4,4))
-    
-    num_tweet = st.slider('Number of tweets to scrap', 0, 1000, 5)
-
-tweets_list = []
-```
-
-STEP 5: 
 I have Created a GUI using streamlit that contains the follwing features
 
 Can enter any keyword or Hashtag to be searched,
@@ -85,7 +63,7 @@ select the ending date,
 Number of tweets needs to be scrapped.
 
 
-STEP 6:
+STEP 5:
 
 Scraping data using TwitterSearchScraper and TwitterHashtagScraper and a dataframe is created to store the entire scraped data. 
 ```
@@ -124,20 +102,20 @@ if word:
                                              'Like count'])
 ```
 
-STEP 7:
+STEP 6:
 
 Now we can download this scraped data in the form of CSV or JSON format.
 
-STEP 8:
+STEP 7:
 
 The database connection is established using pymongo.
 A new collection will be created and data is uploaded into that collection if the user wish to upload.
 
-STEP 9:
+STEP 8:
 
 Using snscrape and pandas,Tweets get scraped,converted into Dataframe and displayed in tabular format
 
-STEP 10:
+STEP 9:
 
 To run the app, Navigate to the folder which app is present using CLI and run the command prompt
 
