@@ -43,7 +43,7 @@ def convert_df(df):
     return df.to_csv().encode('utf-8')
 
 if not tweets_df.empty:
-    col1,col2,col3,col4 = st.columns(4)
+    col1,col2,col3 = st.columns(3)
     with col1:
         csv = convert_df(tweets_df)
         st.download_button(label="Download data as CSV",data=csv,file_name='Twitter_Scraping.csv',mime='text/csv',)
