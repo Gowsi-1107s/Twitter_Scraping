@@ -1,0 +1,23 @@
+
+REQUIRED SKILLS:
+
+* PANDAS
+* MONGODB COMPASS
+* SNSCRAPE
+* STREAMLIT
+
+
+FEATURES FOR CREATING GUI USING STREAMIT:
+
+1} How would you like to search the data, whether keyword or Hashtag to be searched.
+2} Starting date
+3} Ending date
+4} Number of tweets needs to be scrapped.
+
+
+AFTER SCRAPING:
+
+1} Download data as CSV
+2} Download data as JSON
+3} Upload data to MongoDB DATABASE
+4} Show Data
